@@ -1,0 +1,7 @@
+# Hubot ignores
+node_modules
+.DS_Store*
+.hubot_history
+
+# Secrets
+xmpp_config.sh
