@@ -3,5 +3,5 @@ node_modules
 .DS_Store*
 .hubot_history
 
-# Secrets
-xmpp_config.sh
+# Custom configs, passwords, keys, etc.
+bot_config.sh

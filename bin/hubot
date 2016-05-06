@@ -3,14 +3,14 @@
 set -e
 
 # Load the XMPP credentials
-if [ -f ./xmpp_config.sh ]; then
-    . ./xmpp_config.sh
+if [ -f ./bot_config.sh ]; then
+    . ./bot_config.sh
 else
-    echo "Missing XMPP config"
+    echo "Missing bot_config.sh"
     exit 1
 fi
 
 npm install
 export PATH="node_modules/.bin:node_modules/hubot/node_modules/.bin:$PATH"
 
-exec node_modules/.bin/hubot --name "hubot" --adapter "xmpp" "$@"
+exec node_modules/.bin/hubot --name "hubot" "$@"
